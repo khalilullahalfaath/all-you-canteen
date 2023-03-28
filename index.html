@@ -10,9 +10,119 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>All You Can-teen</title>
   </head>
   <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="/img/logo.png"
+            alt="Logo"
+            width="45"
+            height="45"
+            class="d-inline-block align-text-center"
+          />
+          <span class="navbar-text .d-inline-block px-2"> AllYouCanTeen </span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">Food and Drink</a>
+            <a class="nav-link" href="#">Tel-U Canteens</a>
+            <a class="nav-link" href="#">Another Place</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Corousel -->
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2500">
+          <img
+            src="https://images.unsplash.com/photo-1572656631137-7935297eff55?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            class="d-block w-100"
+            alt="Soto"
+          />
+          <div
+            class="carousel-caption d-flex flex-column justify-content-center align-items-center"
+          >
+            <h5 class="corousel-h5">Delightful Indonesian Cuisine</h5>
+            <p>
+              Discover the rich and flavorful dishes of Indonesia, made with
+              aromatic herbs and spices that will tantalize your taste buds.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2500">
+          <img
+            src="https://images.unsplash.com/photo-1561741858-cefa7ca99edf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+            class="d-block w-100"
+            alt="Ayam Bakar"
+          />
+          <div
+            class="carousel-caption d-flex flex-column justify-content-center align-items-center"
+          >
+            <h5 class="corousel-h5">Our Ingredients</h5>
+            <p>
+              We use only the freshest and highest quality ingredients, sourced
+              locally and prepared with care by our experienced chefs.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2500">
+          <img
+            src="https://images.unsplash.com/photo-1572656306390-40a9fc3899f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            class="d-block w-100"
+            alt="Soto"
+          />
+          <div
+            class="carousel-caption d-flex flex-column justify-content-center align-items-center"
+          >
+            <h5 class="corousel-h5">Affordable Prices for Students</h5>
+            <p>
+              We understand the budget constraints of students and offer our
+              delicious dishes at affordable prices.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
