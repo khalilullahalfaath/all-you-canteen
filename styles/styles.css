@@ -1,9 +1,9 @@
-.carousel-item img {
+.carousel-item-top img {
     height: 100vh;
     object-fit: cover;
   }
 
-  .carousel-item::before {
+  .carousel-item-top::before {
     content: "";
     position: absolute;
     top: 0;
@@ -14,7 +14,7 @@
     z-index: 1;
   }
 
-  .carousel-caption {
+  .carousel-caption-top {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -25,19 +25,19 @@
     text-align: center;
   }
 
-  .carousel-control-prev,
-  .carousel-control-next {
+  .carousel-control-prev-top,
+  .carousel-control-next-top {
     width: 40px;
     height: 40px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 75%;
+    background-color: rgba(0, 173, 181, 1);
     z-index: 3;
     top: 50%;
     transform: translateY(-50%);
     margin: 10px 20px;
   }
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
+  .carousel-control-prev-icon-top,
+  .carousel-control-next-icon-top {
     font-size: 20px;
     color: #fff;
     z-index: 5;
@@ -47,16 +47,85 @@
     transform: translate(-50%, -50%);
   }
 
-  .corousel-h5{
-    font-size: 30px;
+  .carousel-caption > h5{
+    font-size: 250%;
+  }
+  .carousel-caption > p{
+    font-size: 130%;
+  }
+
+  .card-food{
+    padding: 25px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: left;
+  }
+
+  .card-food-text{
+    display: inline-block;
+    padding-left: 50px;
+    overflow: auto;
+    max-height: 300px;
+    max-width: 30%;
+    z-index: 1;
+  }
+
+  #foodanddrink + section{
+    margin-top: 400px;
   }
 
   .caption-rec {
     padding: 0 2rem; /* Adjust the padding as needed */
+  }
+
+  .carousel-item-food-card > img{
+height: 300px;
   }
   
   @media (min-width: 992px) {
     .row {
       margin-left: 3rem; /* Adjust the margin as needed */
     }
+  }
+
+  @media (min-width:940px){
+    .card-food{
+      padding-right: 25%;
+      padding-left: 15%;
+      display: relative;
+    }
+
+    .card-food > img{
+      max-width: 250px !important;
+    }
+
+    .card-food-text{
+      max-width: max-content;
+
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-food-text>p{
+      order: 1;
+    }
+    .card-food-text>a{
+      text-align: left;
+      order: 2;
+      align-self: flex-start;
+    }
+  }
+
+  @media (max-width:767px){
+    .caption-rec{
+      margin: auto;
+      justify-content: center;
+      text-align: center;
+    }
+
+
+
   }

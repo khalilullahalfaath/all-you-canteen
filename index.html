@@ -4,13 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.js"
+      integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- bootstrap -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
       crossorigin="anonymous"
     />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- external css -->
     <link rel="stylesheet" href="./styles/styles.css" />
+
     <title>All You Can-teen</title>
   </head>
   <body>
@@ -44,6 +61,7 @@
             <a class="nav-link" href="#">Food and Drink</a>
             <a class="nav-link" href="#">Tel-U Canteens</a>
             <a class="nav-link" href="#">Another Place</a>
+            <a class="nav-link" href="#">Contact</a>
           </div>
         </div>
       </div>
@@ -55,48 +73,51 @@
       data-bs-ride="carousel"
     >
       <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="2500">
+        <div
+          class="carousel-item carousel-item-top active"
+          data-bs-interval="2500"
+        >
           <img
             src="https://images.unsplash.com/photo-1572656631137-7935297eff55?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
             class="d-block w-100"
             alt="Soto"
           />
           <div
-            class="carousel-caption d-flex flex-column justify-content-center align-items-center"
+            class="carousel-caption carousel-caption-top d-flex flex-column justify-content-center align-items-center"
           >
-            <h5 class="corousel-h5">Delightful Indonesian Cuisine</h5>
+            <h5>Delightful Indonesian Cuisine</h5>
             <p>
               Discover the rich and flavorful dishes of Indonesia, made with
               aromatic herbs and spices that will tantalize your taste buds.
             </p>
           </div>
         </div>
-        <div class="carousel-item" data-bs-interval="2500">
+        <div class="carousel-item carousel-item-top" data-bs-interval="2500">
           <img
             src="https://images.unsplash.com/photo-1561741858-cefa7ca99edf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
             class="d-block w-100"
             alt="Ayam Bakar"
           />
           <div
-            class="carousel-caption d-flex flex-column justify-content-center align-items-center"
+            class="carousel-caption carousel-caption-top d-flex flex-column justify-content-center align-items-center"
           >
-            <h5 class="corousel-h5">Our Ingredients</h5>
+            <h5>Our Ingredients</h5>
             <p>
               We use only the freshest and highest quality ingredients, sourced
               locally and prepared with care by our experienced chefs.
             </p>
           </div>
         </div>
-        <div class="carousel-item" data-bs-interval="2500">
+        <div class="carousel-item carousel-item-top" data-bs-interval="2500">
           <img
             src="https://images.unsplash.com/photo-1572656306390-40a9fc3899f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
             class="d-block w-100"
             alt="Soto"
           />
           <div
-            class="carousel-caption d-flex flex-column justify-content-center align-items-center"
+            class="carousel-caption carousel-caption-top d-flex flex-column justify-content-center align-items-center"
           >
-            <h5 class="corousel-h5">Affordable Prices for Students</h5>
+            <h5>Affordable Prices for Students</h5>
             <p>
               We understand the budget constraints of students and offer our
               delicious dishes at affordable prices.
@@ -105,21 +126,27 @@
         </div>
       </div>
       <button
-        class="carousel-control-prev"
+        class="carousel-control-prev carousel-control-prev-top"
         type="button"
         data-bs-target="#carouselExampleAutoplaying"
         data-bs-slide="prev"
       >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span
+          class="carousel-control-prev-icon carousel-control-prev-icon-top"
+          aria-hidden="true"
+        ></span>
         <span class="visually-hidden">Previous</span>
       </button>
       <button
-        class="carousel-control-next"
+        class="carousel-control-next carousel-control-next-top"
         type="button"
         data-bs-target="#carouselExampleAutoplaying"
         data-bs-slide="next"
       >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span
+          class="carousel-control-next-icon carousel-control-next-icon-top"
+          aria-hidden="true"
+        ></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
@@ -129,7 +156,7 @@
         <div class="row align-items-center">
           <div class="col-md-6 col-lg-5">
             <img
-              src="img/nasi-goreng-katsu.jpeg"
+              src="./img/nasi-goreng-katsu.jpeg"
               width="80%"
               height="75%"
               class="rounded float-left"
@@ -160,7 +187,78 @@
           spicy nasi goreng and sate ayam, paired with refreshing coconut water
           and fruit juices. Come and indulge in Indonesia's cuisine today!
         </p>
-        <a class="btn btn-primary" href="#" role="button">See more</a>
+        <!-- Card food image -->
+        <div
+          class="container-fluid card-food"
+          style="background-color: #fafafa"
+        >
+          <div class="row">
+            <div class="col card-food-text">
+              <p>
+                Savor authentic Indonesian flavors at our canteen! Try our top
+                picks, spicy nasi goreng and sate ayam, paired with refreshing
+                coconut water and fruit juices. Come and indulge in Indonesia's
+                cuisine today!
+              </p>
+              <a class="btn btn-primary" href="#" role="button">See more</a>
+            </div>
+            <div class="container col">
+              <div
+                id="carouselExampleRide"
+                class="carousel slide"
+                data-bs-ride="true"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item carousel-item-food-card active">
+                    <img
+                      src="https://images.unsplash.com/photo-1591017403286-fd8493524e1e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                      class="d-block w-100 img-fluid"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item carousel-item-food-card">
+                    <img
+                      src="https://images.unsplash.com/photo-1680100612420-e57b14dd2c7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+                      class="d-block w-100 img-fluid"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item carousel-item-food-card">
+                    <img
+                      src="https://images.unsplash.com/photo-1680122575933-d6e81ac79d7f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1048&q=80"
+                      class="d-block w-100 img-fluid"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleRide"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleRide"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -176,11 +274,25 @@
           the flavors of Indonesia today!
         </p>
       </div>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            
+          </div>
+          <div class="col"></div>
+        </div>
+      </div>
     </section>
 
+    halo
+
+    <!-- js -->
+    <script src="./scripts/script.js"></script>
+
+    <!-- js for bootstrap -->
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
       crossorigin="anonymous"
     ></script>
   </body>
