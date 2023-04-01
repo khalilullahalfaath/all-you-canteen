@@ -82,6 +82,13 @@
   .carousel-item-food-card > img{
 height: 300px;
   }
+
+.logo-footer{
+  width:20px;
+  display: inline;
+}
+
+
   
   @media (min-width: 992px) {
     .row {
@@ -118,6 +125,8 @@ height: 300px;
       align-self: flex-start;
     }
   }
+
+ 
 
   @media (max-width:767px){
     .caption-rec{
