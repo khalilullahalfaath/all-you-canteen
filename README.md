@@ -1,2 +1,2 @@
 # all-you-canteen
-Khalil gay
+This is landing page for all you canteen
