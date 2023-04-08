@@ -23,7 +23,7 @@
 }
 
 .navbar-nav > .nav-link, .tombol{
-  margin-left: 25px;
+  margin-left: 22px;
 }
 
 
@@ -234,7 +234,7 @@ height: 300px;
       border-bottom: 3px solid #0B63DC;
       width: 50%;
       margin: auto;
-      padding-bottom: 3px;
+      padding-bottom: 4px;
       margin-bottom: -6px;
     }
 
@@ -250,7 +250,7 @@ height: 300px;
     } 
 
     .recommendation{
-      margin-left: 0;
+      margin-left: 30px;
     }
 
     .recommendation h1{
@@ -258,11 +258,11 @@ height: 300px;
     }
 
     .recommendation p{
-      font-size: 26px;
+      font-size: 22px;
     }
 
     .recommendation img{
-      margin-top: 75px;
+      margin-top: 50px;
     }
 
     /* Utilities */
