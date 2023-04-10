@@ -36,174 +36,179 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <div class="d-flex align-items-center">
-            <img
-              src="./img/logo.png"
-              alt="Logo"
-              width="30"
-              height="30"
-              class=""
-            />
-            <span class="navbar-text px-2"> AllYouCanteen </span>
-          </div>
-        </a>
+    <section id="home">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <div class="d-flex align-items-center">
+              <img
+                src="./img/logo.png"
+                alt="Logo"
+                width="30"
+                height="30"
+                class=""
+              />
+              <span class="navbar-text px-2"> AllYouCanteen </span>
+            </div>
+          </a>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ms-auto">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#RecommendationForToday"
-              >Today's Recommendation</a
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#RecommendationForToday"
+                >Today's Recommendation</a
+              >
+              <a class="nav-link" href="#foodanddrink">Food and Drink</a>
+              <a class="nav-link" href="#canteens">Tel-U Canteens</a>
+              <a class="nav-link" href="#anotherPlace">Another Place</a>
+              <a class="btn btn-primary tombol" href="#contactus">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- end Navbar -->
+      <!-- Corousel -->
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide position-relative"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div
+            class="carousel-item carousel-item-top active"
+            data-bs-interval="2500"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1572656631137-7935297eff55?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+              class="d-block w-100"
+              alt="Soto"
+            />
+            <div
+              class="carousel-caption carousel-caption-top d-flex flex-column justify-content-center align-items-center"
             >
-            <a class="nav-link" href="#foodanddrink">Food and Drink</a>
-            <a class="nav-link" href="#canteens">Tel-U Canteens</a>
-            <a class="nav-link" href="#AnotherPlace">Another Place</a>
-            <a class="btn btn-primary tombol" href="#contactus">Contact Us</a>
+              <h5>Delightful Indonesian Cuisine</h5>
+              <p>
+                Discover the rich and flavorful dishes of Indonesia, made with
+                aromatic herbs and spices that will tantalize your taste buds.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item carousel-item-top" data-bs-interval="2500">
+            <img
+              src="https://images.unsplash.com/photo-1561741858-cefa7ca99edf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+              class="d-block w-100"
+              alt="Ayam Bakar"
+            />
+            <div
+              class="carousel-caption carousel-caption-top d-flex flex-column justify-content-center align-items-center"
+            >
+              <h5>Our Ingredients</h5>
+              <p>
+                We use only the freshest and highest quality ingredients,
+                sourced locally and prepared with care by our experienced chefs.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item carousel-item-top" data-bs-interval="2500">
+            <img
+              src="https://images.unsplash.com/photo-1572656306390-40a9fc3899f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+              class="d-block w-100"
+              alt="Soto"
+            />
+            <div
+              class="carousel-caption carousel-caption-top d-flex flex-column justify-content-center align-items-center"
+            >
+              <h5>Affordable Prices for Students</h5>
+              <p>
+                We understand the budget constraints of students and offer our
+                delicious dishes at affordable prices.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
-    <!-- end Navbar -->
-    <!-- Corousel -->
-    <div
-      id="carouselExampleAutoplaying"
-      class="carousel slide position-relative"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-inner">
-        <div
-          class="carousel-item carousel-item-top active"
-          data-bs-interval="2500"
+        <button
+          class="carousel-control-prev carousel-control-prev-top"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
         >
-          <img
-            src="https://images.unsplash.com/photo-1572656631137-7935297eff55?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-            class="d-block w-100"
-            alt="Soto"
-          />
-          <div
-            class="carousel-caption carousel-caption-top d-flex flex-column justify-content-center align-items-center"
-          >
-            <h5>Delightful Indonesian Cuisine</h5>
-            <p>
-              Discover the rich and flavorful dishes of Indonesia, made with
-              aromatic herbs and spices that will tantalize your taste buds.
-            </p>
-          </div>
-        </div>
-        <div class="carousel-item carousel-item-top" data-bs-interval="2500">
-          <img
-            src="https://images.unsplash.com/photo-1561741858-cefa7ca99edf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-            class="d-block w-100"
-            alt="Ayam Bakar"
-          />
-          <div
-            class="carousel-caption carousel-caption-top d-flex flex-column justify-content-center align-items-center"
-          >
-            <h5>Our Ingredients</h5>
-            <p>
-              We use only the freshest and highest quality ingredients, sourced
-              locally and prepared with care by our experienced chefs.
-            </p>
-          </div>
-        </div>
-        <div class="carousel-item carousel-item-top" data-bs-interval="2500">
-          <img
-            src="https://images.unsplash.com/photo-1572656306390-40a9fc3899f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-            class="d-block w-100"
-            alt="Soto"
-          />
-          <div
-            class="carousel-caption carousel-caption-top d-flex flex-column justify-content-center align-items-center"
-          >
-            <h5>Affordable Prices for Students</h5>
-            <p>
-              We understand the budget constraints of students and offer our
-              delicious dishes at affordable prices.
-            </p>
-          </div>
-        </div>
+          <span
+            class="carousel-control-prev-icon carousel-control-prev-icon-top"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next carousel-control-next-top"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon carousel-control-next-icon-top"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <button
-        class="carousel-control-prev carousel-control-prev-top"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="prev"
-      >
-        <span
-          class="carousel-control-prev-icon carousel-control-prev-icon-top"
-          aria-hidden="true"
-        ></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next carousel-control-next-top"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="next"
-      >
-        <span
-          class="carousel-control-next-icon carousel-control-next-icon-top"
-          aria-hidden="true"
-        ></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    <!-- End carousel -->
-    <!-- Start What can you find here -->
-    <div class="container z-1 position-relative">
-      <div class="row justify-content-center">
-        <div class="col-10 info-panel">
-          <div class="row mt-3 mb-5">
-            <h1 class="text-center">What you can find here</h1>
-          </div>
-          <div class="row">
-            <div class="col-lg">
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/1532/1532688.png"
-                alt="food photo"
-                class="img-info-panel float-start"
-              />
-              <h4>Foods and Drinks</h4>
-              <p>Lorem ipsum dolor sit amet.</p>
+      <!-- End carousel -->
+      <!-- Start What can you find here -->
+      <div class="container z-1 position-relative">
+        <div class="row justify-content-center">
+          <div class="col-10 info-panel">
+            <div class="row mt-3 mb-5">
+              <h1 class="text-center">What you can find here</h1>
             </div>
-            <div class="col-lg">
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/5392/5392273.png"
-                alt="Canteen photo"
-                class="img-info-panel float-start"
-              />
-              <h4>Canteens</h4>
-              <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div class="col-lg">
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/2533/2533563.png"
-                alt="Another places photo"
-                class="img-info-panel float-start"
-              />
-              <h4>Another Places</h4>
-              <p>Lorem ipsum dolor sit amet.</p>
+            <div class="row">
+              <div class="col-lg">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/1532/1532688.png"
+                  alt="food photo"
+                  class="img-info-panel float-start"
+                />
+                <h4>Foods and Drinks</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+              <div class="col-lg">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/5392/5392273.png"
+                  alt="Canteen photo"
+                  class="img-info-panel float-start"
+                />
+                <h4>Canteens</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+              <div class="col-lg">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/2533/2533563.png"
+                  alt="Another places photo"
+                  class="img-info-panel float-start"
+                />
+                <h4>Another Places</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- end What can you find here -->
+      <!-- end What can you find here -->
+    </section>
+
     <!-- Recommendation for today -->
-    <section id="RecommendationForToday">
+    <section id="RecommendationForToday" class="background-gray">
       <div class="container justify-content-center">
         <div class="col-10">
           <div class="row recommendation">
@@ -231,96 +236,19 @@
     </section>
     <!-- Food and Drink -->
     <section id="foodanddrink">
-      <div class="container mt-5 text-center">
+      <div class="container text-center">
         <h1>Food and Drink</h1>
         <p>
           Savor authentic Indonesian flavors at our canteen! Try our top picks,
           spicy nasi goreng and sate ayam, paired with refreshing coconut water
           and fruit juices. Come and indulge in Indonesia's cuisine today!
         </p>
-        <!-- Card food image -->
-        <div
-          class="container-fluid card-food"
-          style="background-color: #fafafa"
-        >
-          <div class="row">
-            <div class="col card-food-text">
-              <p>
-                Savor authentic Indonesian flavors at our canteen! Try our top
-                picks, spicy nasi goreng and sate ayam, paired with refreshing
-                coconut water and fruit juices. Come and indulge in Indonesia's
-                cuisine today!
-              </p>
-              <a
-                class="btn btn-primary"
-                href="../all-you-canteen/pages/food.html"
-                role="button"
-                >See more</a
-              >
-            </div>
-            <div class="container col">
-              <div
-                id="carouselExampleRide"
-                class="carousel slide"
-                data-bs-ride="true"
-              >
-                <div class="carousel-inner">
-                  <div class="carousel-item carousel-item-food-card active">
-                    <img
-                      src="https://images.unsplash.com/photo-1591017403286-fd8493524e1e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                      class="d-block w-100 img-fluid"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="carousel-item carousel-item-food-card">
-                    <img
-                      src="https://images.unsplash.com/photo-1680100612420-e57b14dd2c7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
-                      class="d-block w-100 img-fluid"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="carousel-item carousel-item-food-card">
-                    <img
-                      src="https://images.unsplash.com/photo-1680122575933-d6e81ac79d7f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1048&q=80"
-                      class="d-block w-100 img-fluid"
-                      alt="..."
-                    />
-                  </div>
-                </div>
-                <button
-                  class="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#carouselExampleRide"
-                  data-bs-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                  class="carousel-control-next"
-                  type="button"
-                  data-bs-target="#carouselExampleRide"
-                  data-bs-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
     <!-- Telyu Canteens -->
-    <section id="canteens">
-      <div class="container mt-5 text-center">
+    <section id="canteens" class="background-gray">
+      <div class="container text-center">
         <h1>Tel-U Canteens</h1>
         <p>
           Experience authentic Indonesian cuisine at our canteen! Enjoy
@@ -333,18 +261,17 @@
     </section>
 
     <!-- Another Place -->
-    <div class="container mt-5 text-center">
-      <h1>Another Place</h1>
-      <p>
-        A curated list of delicious and unique dining options beyond the typical
-        campus canteens. From Telyu Coffee to the Food Court in front of campus,
-        and Tel-U Grill, there's something for every palate. Reserve your spot
-        today and experience the local flavors of Telkom University.
-      </p>
-    </div>
-
-    <!-- Contact Us -->
-    <section id="AnotherPlace">
+    <section id="anotherPlace">
+      <div class="container text-center">
+        <h1>Another Place</h1>
+        <p>
+          A curated list of delicious and unique dining options beyond the
+          typical campus canteens. From Telyu Coffee to the Food Court in front
+          of campus, and Tel-U Grill, there's something for every palate.
+          Reserve your spot today and experience the local flavors of Telkom
+          University.
+        </p>
+      </div>
       <div class="container">
         <div class="row">
           <div class="col-md-6 order-first">
@@ -393,9 +320,11 @@
       </div>
     </section>
 
-    <section id="contactus"></section>
+    <!-- Contact Us -->
 
-    <section id="footer">
+    <section id="contactus" class="background-gray"></section>
+
+    <footer>
       <div class="container-fluid bg-dark pt-3">
         <div class="row">
           <div class="col text-center">
@@ -403,7 +332,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </footer>
 
     <!-- jquery -->
     <script

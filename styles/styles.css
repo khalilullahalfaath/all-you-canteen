@@ -1,7 +1,30 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* reset */
+section{
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+section{
+  padding-bottom: 10%;
+}
+
+section:not(#home) {
+  /* styles for all sections except the one with ID of "home" */
+  padding-top: 10%;
+}
 /* Navbar */
 
 .navbar{
   transition: background-color 0.5s ease;
+
+}
+
+.navbar-highlight{
+  background-color: yellow;
 }
 
 .scrolled {
@@ -36,9 +59,8 @@
 
 }
 .carousel-item-top img {
-    height: 100vh;
+    height: 120vh;
     object-fit: cover;
-    margin-bottom: 100px;
   }
 
   .carousel-item-top::before {
@@ -119,7 +141,7 @@
 /* Recommendation for today */
 
 .recommendation{
-  margin-top: 100px;
+  margin-top: 0px;
   margin-left: 20px;
 }
 
@@ -154,9 +176,6 @@
     z-index: 1;
   }
 
-  #foodanddrink + section{
-    margin-top: 400px;
-  }
 
   .caption-rec {
     padding: 0 2rem; /* Adjust the padding as needed */
@@ -209,6 +228,15 @@ p{
   font-weight: 200;
   color: #ACACAC;
 }
+
+.box-shadow{
+  box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075) !important;
+}
+
+.background-gray{
+  background-color: #d5d5d5;
+}
+
 
   /* Desktop version */
   @media (min-width: 992px) {
