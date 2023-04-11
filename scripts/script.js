@@ -18,10 +18,9 @@ $(document).ready(function () {
         $('.nav-link').addClass('white-text');
 
       }
-
-
     });
   }
+  $('#tabel-data').DataTable();
 
 
 
