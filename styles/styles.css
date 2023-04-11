@@ -442,6 +442,38 @@ background-size: cover;
   color: var(--color-primary);
 }
 
+/* canteens */
+.canteens h4{
+  font-family: 'poppins';
+  text-transform: capitalize;
+  font-size: medium;
+  color: #212529;
+}
+
+.tab-header h2{
+  margin: 40px 0 0 0;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  padding: 0;
+  color: #7f7f90;
+  text-transform: uppercase;
+  font-family: var(--font-default);
+}
+
+.tab-header h3{
+  
+  margin: 0;
+  font-size: 48px !important; 
+  font-weight: 400 !important;
+  font-family: 'Dancing Script', cursive;
+}
+
+.tab-header p{
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: center;
+}
 
 /* Utilities */
 
