@@ -523,7 +523,11 @@
           <h1>Contact Us</h1>
           <p>"Have a Question? <span>Contact Us!"</span></p>
         </div>
-        <form action="mailto:allyoucanteen@gmail.com" method="post">
+        <form
+          action="mailto:allyoucanteen@gmail.com"
+          method="post"
+          enctype="text/plain"
+        >
           <div class="row input-container">
             <div class="col-xs-12">
               <div class="styled-input wide">
@@ -549,8 +553,21 @@
                 <label>Message</label>
               </div>
             </div>
-            <div class="col-xs-12">
-              <div class="btn-lrg submit-btn">Send Message</div>
+
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <input
+                  type="submit"
+                  class="btn btn-primary"
+                  style="max-width: fit-content"
+                />
+
+                <input
+                  type="reset"
+                  class="btn btn-warning"
+                  style="max-width: fit-content"
+                />
+              </div>
             </div>
           </div>
         </form>
