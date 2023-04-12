@@ -5,20 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- font -->
-    <!-- font: Poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- fontawesome icon -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <!-- font: Pacifico -->
+    <!-- font -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
     <!-- bootstrap -->
@@ -36,374 +33,605 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <div class="d-flex align-items-center">
-            <img
-              src="./img/logo.png"
-              alt="Logo"
-              width="30"
-              height="30"
-              class=""
-            />
-            <span class="navbar-text px-2"> AllYouCanteen </span>
-          </div>
-        </a>
+    <section id="home">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <div class="d-flex align-items-center">
+              <img
+                src="./img/logo.png"
+                alt="Logo"
+                width="30"
+                height="30"
+                class=""
+              />
+              <span class="navbar-text px-2"> AllYouCanteen </span>
+            </div>
+          </a>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ms-auto">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#RecommendationForToday"
-              >Today's Recommendation</a
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#RecommendationForToday"
+                >Today's Recommendation</a
+              >
+              <a class="nav-link" href="#foodanddrink">Food and Drink</a>
+              <a class="nav-link" href="#canteens">Tel-U Canteens</a>
+              <a class="nav-link" href="#anotherPlace">Another Place</a>
+              <a class="btn btn-primary tombol" href="#contactus">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- end Navbar -->
+      <!-- Corousel -->
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide position-relative"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div
+            class="carousel-item carousel-item-top active"
+            data-bs-interval="2500"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1631653014076-9ae41e4216d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+              class="d-block w-100"
+              alt="Soto"
+            />
+            <div
+              class="carousel-caption carousel-caption-top d-flex flex-column justify-content-center align-items-center"
             >
-            <a class="nav-link" href="#foodanddrink">Food and Drink</a>
-            <a class="nav-link" href="#canteens">Tel-U Canteens</a>
-            <a class="nav-link" href="#AnotherPlace">Another Place</a>
-            <a class="btn btn-primary tombol" href="#contactus">Contact Us</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!-- end Navbar -->
-    <!-- Corousel -->
-    <div
-      id="carouselExampleAutoplaying"
-      class="carousel slide position-relative"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-inner">
-        <div
-          class="carousel-item carousel-item-top active"
-          data-bs-interval="2500"
-        >
-          <img
-            src="https://images.unsplash.com/photo-1572656631137-7935297eff55?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-            class="d-block w-100"
-            alt="Soto"
-          />
-          <div
-            class="carousel-caption carousel-caption-top d-flex flex-column justify-content-center align-items-center"
-          >
-            <h5>Delightful Indonesian Cuisine</h5>
-            <p>
-              Discover the rich and flavorful dishes of Indonesia, made with
-              aromatic herbs and spices that will tantalize your taste buds.
-            </p>
-          </div>
-        </div>
-        <div class="carousel-item carousel-item-top" data-bs-interval="2500">
-          <img
-            src="https://images.unsplash.com/photo-1561741858-cefa7ca99edf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-            class="d-block w-100"
-            alt="Ayam Bakar"
-          />
-          <div
-            class="carousel-caption carousel-caption-top d-flex flex-column justify-content-center align-items-center"
-          >
-            <h5>Our Ingredients</h5>
-            <p>
-              We use only the freshest and highest quality ingredients, sourced
-              locally and prepared with care by our experienced chefs.
-            </p>
-          </div>
-        </div>
-        <div class="carousel-item carousel-item-top" data-bs-interval="2500">
-          <img
-            src="https://images.unsplash.com/photo-1572656306390-40a9fc3899f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-            class="d-block w-100"
-            alt="Soto"
-          />
-          <div
-            class="carousel-caption carousel-caption-top d-flex flex-column justify-content-center align-items-center"
-          >
-            <h5>Affordable Prices for Students</h5>
-            <p>
-              We understand the budget constraints of students and offer our
-              delicious dishes at affordable prices.
-            </p>
-          </div>
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev carousel-control-prev-top"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="prev"
-      >
-        <span
-          class="carousel-control-prev-icon carousel-control-prev-icon-top"
-          aria-hidden="true"
-        ></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next carousel-control-next-top"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="next"
-      >
-        <span
-          class="carousel-control-next-icon carousel-control-next-icon-top"
-          aria-hidden="true"
-        ></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    <!-- End carousel -->
-    <!-- Start What can you find here -->
-    <div class="container z-1 position-relative">
-      <div class="row justify-content-center">
-        <div class="col-10 info-panel">
-          <div class="row mt-3 mb-5">
-            <h1 class="text-center">What you can find here</h1>
-          </div>
-          <div class="row">
-            <div class="col-lg">
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/1532/1532688.png"
-                alt="food photo"
-                class="img-info-panel float-start"
-              />
-              <h4>Foods and Drinks</h4>
-              <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div class="col-lg">
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/5392/5392273.png"
-                alt="Canteen photo"
-                class="img-info-panel float-start"
-              />
-              <h4>Canteens</h4>
-              <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div class="col-lg">
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/2533/2533563.png"
-                alt="Another places photo"
-                class="img-info-panel float-start"
-              />
-              <h4>Another Places</h4>
-              <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end What can you find here -->
-    <!-- Recommendation for today -->
-    <section id="RecommendationForToday">
-      <div class="container justify-content-center">
-        <div class="col-10">
-          <div class="row recommendation">
-            <div class="col-6">
-              <img
-                src="./img/nasi-goreng-katsu.png"
-                alt="Nasi Goreng Katsu"
-                class="img-fluid"
-              />
-            </div>
-            <div class="col">
-              <h1>Recommendation For <span> Today</span></h1>
+              <h5>Delightful Indonesian Cuisine</h5>
               <p>
-                Nasi goreng katsu is a fusion dish that combines Indonesian nasi
-                goreng with Japanese katsu. It's stir-fried rice with
-                vegetables, shrimp or chicken, topped with a crispy breaded
-                cutlet. This dish is a delicious and unique blend of flavors and
-                textures. Come and try it at our canteen today!
+                Discover the rich and flavorful dishes of Indonesia, made with
+                aromatic herbs and spices that will tantalize your taste buds.
               </p>
-              <a href="" class="btn btn-primary tombol">Buy Now</a>
+            </div>
+          </div>
+          <div class="carousel-item carousel-item-top" data-bs-interval="2500">
+            <img
+              src="https://images.unsplash.com/photo-1529563021893-cc83c992d75d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+              class="d-block w-100"
+              alt="Ayam Bakar"
+            />
+            <div
+              class="carousel-caption carousel-caption-top d-flex flex-column justify-content-center align-items-center"
+            >
+              <h5>Our Ingredients</h5>
+              <p>
+                We use only the freshest and highest quality ingredients,
+                sourced locally and prepared with care by our experienced chefs.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item carousel-item-top" data-bs-interval="2500">
+            <img
+              src="https://images.unsplash.com/photo-1595301770427-936975d4c858?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              class="d-block w-100"
+              alt="Soto"
+            />
+            <div
+              class="carousel-caption carousel-caption-top d-flex flex-column justify-content-center align-items-center"
+            >
+              <h5>Affordable Prices for Students</h5>
+              <p>
+                We understand the budget constraints of students and offer our
+                delicious dishes at affordable prices.
+              </p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Food and Drink -->
-    <section id="foodanddrink">
-      <div class="container mt-5 text-center">
-        <h1>Food and Drink</h1>
-        <p>
-          Savor authentic Indonesian flavors at our canteen! Try our top picks,
-          spicy nasi goreng and sate ayam, paired with refreshing coconut water
-          and fruit juices. Come and indulge in Indonesia's cuisine today!
-        </p>
-        <!-- Card food image -->
-        <div
-          class="container-fluid card-food"
-          style="background-color: #fafafa"
+        <button
+          class="carousel-control-prev carousel-control-prev-top"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
         >
-          <div class="row">
-            <div class="col card-food-text">
-              <p>
-                Savor authentic Indonesian flavors at our canteen! Try our top
-                picks, spicy nasi goreng and sate ayam, paired with refreshing
-                coconut water and fruit juices. Come and indulge in Indonesia's
-                cuisine today!
-              </p>
-              <a
-                class="btn btn-primary"
-                href="../all-you-canteen/pages/food.html"
-                role="button"
-                >See more</a
-              >
+          <span
+            class="carousel-control-prev-icon carousel-control-prev-icon-top"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next carousel-control-next-top"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon carousel-control-next-icon-top"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- End carousel -->
+      <!-- Start What can you find here -->
+      <div class="container z-1 position-relative">
+        <div class="row justify-content-center">
+          <div class="col-10 info-panel">
+            <div class="row mt-3 mb-5">
+              <h1 class="text-center">What you can find here</h1>
             </div>
-            <div class="container col">
-              <div
-                id="carouselExampleRide"
-                class="carousel slide"
-                data-bs-ride="true"
-              >
-                <div class="carousel-inner">
-                  <div class="carousel-item carousel-item-food-card active">
-                    <img
-                      src="https://images.unsplash.com/photo-1591017403286-fd8493524e1e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                      class="d-block w-100 img-fluid"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="carousel-item carousel-item-food-card">
-                    <img
-                      src="https://images.unsplash.com/photo-1680100612420-e57b14dd2c7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
-                      class="d-block w-100 img-fluid"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="carousel-item carousel-item-food-card">
-                    <img
-                      src="https://images.unsplash.com/photo-1680122575933-d6e81ac79d7f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1048&q=80"
-                      class="d-block w-100 img-fluid"
-                      alt="..."
-                    />
-                  </div>
-                </div>
-                <button
-                  class="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#carouselExampleRide"
-                  data-bs-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                  class="carousel-control-next"
-                  type="button"
-                  data-bs-target="#carouselExampleRide"
-                  data-bs-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+            <div class="row">
+              <div class="col-lg">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/1532/1532688.png"
+                  alt="food photo"
+                  class="img-info-panel float-start"
+                />
+                <h4>Foods and Drinks</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+              <div class="col-lg">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/5392/5392273.png"
+                  alt="Canteen photo"
+                  class="img-info-panel float-start"
+                />
+                <h4>Canteens</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+              <div class="col-lg">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/2533/2533563.png"
+                  alt="Another places photo"
+                  class="img-info-panel float-start"
+                />
+                <h4>Another Places</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- end What can you find here -->
+    </section>
+
+    <!-- Recommendation for today -->
+    <section id="RecommendationForToday" class="hero">
+      <div class="container text-center">
+        <div class="section-header">
+          <h1>Recommendation for Today</h1>
+          <p>"May Us <span>Recommend This Menu?"</span></p>
+        </div>
+        <div class="row justify-content-between gy-5">
+          <div
+            class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start"
+          >
+            <h2>Enjoy Your Healthy<br />Delicious Food</h2>
+            <p>
+              Sed autem laudantium dolores. Voluptatem itaque ea consequatur
+              eveniet. Eum quas beatae cumque eum quaerat.
+            </p>
+          </div>
+          <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
+            <img src="./img/hero-img.png" class="img-fluid" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Food and Drink -->
+    <section id="foodanddrink" class="background-gray foods">
+      <div class="container text-center">
+        <div class="section-header">
+          <h1>Food and Drink</h1>
+          <p>"Enjoy Our <span>Food and Drink</span> Pairings"</p>
+        </div>
+
+        <div class="row gy-4 mt-3">
+          <div class="col-lg-4 col-md-6">
+            <div class="food-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-mountain-city"></i>
+              </div>
+              <h3>Nama Makanan</h3>
+              <p>deskripsi makanan</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="food-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-mountain-city"></i>
+              </div>
+              <h3>Nama Makanan</h3>
+              <p>deskripsi makanan</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="food-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-mountain-city"></i>
+              </div>
+              <h3>Nama Makanan</h3>
+              <p>deskripsi makanan</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="food-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-mountain-city"></i>
+              </div>
+              <h3>Nama Makanan</h3>
+              <p>deskripsi makanan</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="food-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-mountain-city"></i>
+              </div>
+              <h3>Nama Makanan</h3>
+              <p>deskripsi makanan</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="food-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-mountain-city"></i>
+              </div>
+              <h3>Nama Makanan</h3>
+              <p>deskripsi makanan</p>
+            </div>
+          </div>
+          <!-- End Food Item -->
+        </div>
+        <a href="./pages/food.html" class="btn btn-primary mt-5">See more</a>
+      </div>
     </section>
 
     <!-- Telyu Canteens -->
-    <section id="canteens">
-      <div class="container mt-5 text-center">
-        <h1>Tel-U Canteens</h1>
-        <p>
-          Experience authentic Indonesian cuisine at our canteen! Enjoy
-          favorites like nasi goreng, sate ayam, and bakso, paired with
-          refreshing drinks like coconut water and fruit juices. Don't miss our
-          top picks, including spicy nasi goreng and sate ayam. Come and savor
-          the flavors of Indonesia today!
-        </p>
+    <section id="canteens" class="canteens">
+      <div class="container text-center">
+        <div class="section-header">
+          <h1>Tel-U Canteens</h1>
+          <p>"Fuel Up at <span>Tel-U Canteens"</span></p>
+        </div>
+
+        <ul class="nav nav-tabs d-flex justify-content-center mt-5">
+          <li class="nav-item">
+            <a
+              class="nav-link active show"
+              data-bs-toggle="tab"
+              data-bs-target="#menu-starters"
+            >
+              <h4>Kantin Asrama Putri</h4>
+            </a>
+          </li>
+          <!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              data-bs-toggle="tab"
+              data-bs-target="#menu-breakfast"
+            >
+              <h4>Kantin Asrama Putra</h4> </a
+            ><!-- End tab nav item -->
+          </li>
+
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              data-bs-toggle="tab"
+              data-bs-target="#menu-lunch"
+            >
+              <h4>Kantin FKB</h4>
+            </a>
+          </li>
+          <!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              data-bs-toggle="tab"
+              data-bs-target="#menu-dinner"
+            >
+              <h4>Kantin GKU</h4>
+            </a>
+          </li>
+          <!-- End tab nav item -->
+        </ul>
+
+        <div class="tab-content">
+          <div class="tab-pane fade active show" id="menu-starters">
+            <div class="tab-header text-center">
+              <h2>Deskripsi</h2>
+              <h3>Kantin Asrama Putri</h3>
+              <p>
+                Located near the female dormitory at Telkom University, our
+                canteen offers a diverse range of tasty options to satisfy any
+                appetite. From the crispy and savory nasi goreng katsu to the
+                refreshing and healthy juices, our menu is sure to please. And
+                don't forget to try our creamy and decadent ice cream for a
+                sweet treat!
+              </p>
+            </div>
+            <!-- stand -->
+            <div class="row gy-5 justify-content-center">
+              <div class="col-lg-4 menu-item">
+                <!-- photos stand -->
+                <a href="" class="glightbox"
+                  ><img src="" class="menu-img img-fluid" alt=""
+                /></a>
+                <h4>Stand's name</h4>
+                <p class="top-menu">Lorem, deren, trataro, filede, nerada</p>
+                <p class="coord">10.0101010</p>
+              </div>
+              <!--  endStand Item -->
+            </div>
+            <!-- end stand content -->
+          </div>
+          <!-- End Kantin Asrama Putri Content -->
+
+          <div class="tab-pane fade" id="menu-breakfast">
+            <div class="tab-header text-center">
+              <h2>Deskripsi</h2>
+              <h3>Kantin Asrama Putra</h3>
+              <p>
+                Conveniently located near TULT building and parking lot, this
+                canteen offers easy access for students and faculty. Grab a
+                quick bite of delicious food in between classes at this
+                convenient location.
+              </p>
+            </div>
+
+            <div class="row gy-5 justify-content-center">
+              <div class="col-lg-4 menu-item">
+                <!-- photos stand -->
+                <a href="" class="glightbox"
+                  ><img src="" class="menu-img img-fluid" alt=""
+                /></a>
+                <h4>Stand's name</h4>
+                <p class="top-menu">Lorem, deren, trataro, filede, nerada</p>
+                <p class="coord">10.0101010</p>
+              </div>
+              <!--  endStand Item -->
+            </div>
+            <!-- end stand content -->
+          </div>
+          <!-- End Kantin Asrama Putra Content -->
+
+          <div class="tab-pane fade" id="menu-lunch">
+            <div class="tab-header text-center">
+              <h2>Deskripsi</h2>
+              <h3>Kantin FKB</h3>
+              <p>
+                Located near the Faculty of Communication and Business, this
+                canteen offers a variety of tasty food options for students and
+                faculty. Grab a quick lunch or snack at this convenient location
+                in between classes or during breaks
+              </p>
+            </div>
+
+            <div class="row gy-5 justify-content-center">
+              <div class="col-lg-4 menu-item">
+                <!-- photos stand -->
+                <a href="" class="glightbox"
+                  ><img src="" class="menu-img img-fluid" alt=""
+                /></a>
+                <h4>Stand's name</h4>
+                <p class="top-menu">Lorem, deren, trataro, filede, nerada</p>
+                <p class="coord">10.0101010</p>
+              </div>
+              <!--  endStand Item -->
+            </div>
+            <!-- end stand content -->
+          </div>
+          <!-- End Kantin FKB Content -->
+
+          <div class="tab-pane fade" id="menu-dinner">
+            <div class="tab-header text-center">
+              <h2>Deskripsi</h2>
+              <h3>Kantin GKU</h3>
+              <p>
+                Satisfy your hunger with the hotplate fried rice and enjoy a
+                variety of refreshing beverages at this canteen located on the
+                ground floor of the General Lecture Building (GKU). Conveniently
+                located, it's the perfect spot to grab a quick bite in between
+                classes or meetings.
+              </p>
+            </div>
+
+            <div class="row gy-5 justify-content-center">
+              <div class="col-lg-4 menu-item">
+                <!-- photos stand -->
+                <a href="" class="glightbox"
+                  ><img src="" class="menu-img img-fluid" alt=""
+                /></a>
+                <h4>Stand's name</h4>
+                <p class="top-menu">Lorem, deren, trataro, filede, nerada</p>
+                <p class="coord">10.0101010</p>
+              </div>
+              <!--  endStand Item -->
+            </div>
+            <!-- end stand content -->
+          </div>
+          <!-- End Kantin GKU Content -->
+        </div>
       </div>
     </section>
 
     <!-- Another Place -->
-    <div class="container mt-5 text-center">
-      <h1>Another Place</h1>
-      <p>
-        A curated list of delicious and unique dining options beyond the typical
-        campus canteens. From Telyu Coffee to the Food Court in front of campus,
-        and Tel-U Grill, there's something for every palate. Reserve your spot
-        today and experience the local flavors of Telkom University.
-      </p>
-    </div>
+    <section id="anotherPlace" class="background-gray">
+      <div class="container text-center">
+        <div class="section-header">
+          <h1>Another Place</h1>
+          <p>"Expand Your Palate at <span>Another Place"</span></p>
+        </div>
+        <div class="row gy-5 justify-content-center">
+          <div class="col-lg-4 menu-item">
+            <!-- photos restaurant -->
+            <a href="" class="glightbox"
+              ><img src="" class="menu-img img-fluid" alt=""
+            /></a>
+            <h4>Telyu Coffee</h4>
+            <p class="top-menu">Lorem, deren, trataro, filede, nerada</p>
+            <p class="desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+              explicabo veniam officia eum, nisi eveniet possimus recusandae
+              facilis ratione odio.
+            </p>
+          </div>
+          <div class="col-lg-4 menu-item">
+            <!-- photos restaurant -->
+            <a href="" class="glightbox"
+              ><img src="" class="menu-img img-fluid" alt=""
+            /></a>
+            <h4>Food Court</h4>
+            <p class="top-menu">Lorem, deren, trataro, filede, nerada</p>
+            <p class="desc">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
+              dicta atque praesentium quisquam aliquam voluptatibus quidem
+              laboriosam asperiores officiis animi?
+            </p>
+          </div>
+          <div class="col-lg-4 menu-item">
+            <!-- photos restaurant -->
+            <a href="" class="glightbox"
+              ><img src="" class="menu-img img-fluid" alt=""
+            /></a>
+            <h4>Telyu Grill</h4>
+            <p class="top-menu">Lorem, deren, trataro, filede, nerada</p>
+            <p class="desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Obcaecati fuga eveniet porro earum voluptatum, distinctio
+              consequatur aliquid quas iste natus.
+            </p>
+          </div>
+          <!--  end places Item -->
+        </div>
+      </div>
+    </section>
 
     <!-- Contact Us -->
-    <section id="AnotherPlace">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 order-first">
-            <img src="./img/telcoff.png" class="img-fluid" />
-          </div>
-          <div class="col-md-6 order-last">
-            <h3>Tel-U Coffee</h3>
-            <p>
-              Telyu Coffee is a cozy and inviting cafe located within Telkom
-              University that offers a warm and welcoming atmosphere for
-              students and faculty alike. The cafe serves a variety of delicious
-              coffee blends and specialty drinks, as well as a selection of
-              tasty snacks and pastries. Whether you're looking for a quick
-              caffeine fix or a comfortable spot to study or relax, Telyu Coffee
-              is the perfect destination.
-            </p>
-          </div>
+
+    <section id="contactus">
+      <div class="container text-center">
+        <div class="section-header">
+          <h1>Contact Us</h1>
+          <p>"Have a Question? <span>Contact Us!"</span></p>
         </div>
-        <div class="row">
-          <div class="col-md-6 order-last">
-            <p>
-              The food court in front of Telkom University is a bustling hub of
-              activity where students and faculty gather to enjoy a diverse
-              selection of delicious meals and snacks. With a wide range of food
-              stalls offering everything from traditional Indonesian dishes to
-              international cuisine, there is something for everyone to enjoy
-            </p>
+        <form
+          action="mailto:allyoucanteen@gmail.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <div class="row input-container">
+            <div class="col-xs-12">
+              <div class="styled-input wide">
+                <input type="text" required />
+                <label>Name</label>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="styled-input">
+                <input type="text" required />
+                <label>Email</label>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="styled-input" style="float: right">
+                <input type="text" required />
+                <label>Phone Number</label>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="styled-input wide">
+                <textarea required></textarea>
+                <label>Message</label>
+              </div>
+            </div>
+
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <input
+                  type="submit"
+                  class="btn btn-primary"
+                  style="max-width: fit-content"
+                />
+
+                <input
+                  type="reset"
+                  class="btn btn-warning"
+                  style="max-width: fit-content"
+                />
+              </div>
+            </div>
           </div>
-          <div class="col-md-6 order-first">
-            <img src="" class="img-fluid" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 order-md-1">
-            <img src="" class="img-fluid" />
-          </div>
-          <div class="col-md-6 order-md-2">
-            <p>
-              From fresh meats and seafood to a variety of vegetables and sides,
-              there's no shortage of options to choose from. So grab your apron
-              and fire up the grill for a one-of-a-kind dining experience at
-              Telyu Grill.
-            </p>
-          </div>
-        </div>
+        </form>
       </div>
     </section>
 
-    <section id="contactus"></section>
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h3>AllYou<span>Canteen</span></h3>
 
-    <section id="footer">
-      <div class="container-fluid bg-dark pt-3">
-        <div class="row">
-          <div class="col text-center">
-            <p class="text-white">&copy; 2023 AllYouCanTeen</p>
-          </div>
+        <p class="footer-links">
+          <a href="#" class="link-1">Home</a>
+
+          <a href="#RecommendationForToday">Today's Recommendation</a>
+
+          <a href="#foodanddrink">Food and Drink</a>
+
+          <a href="#canteens">Tel-U Canteens</a>
+
+          <a href="#anotherPlace">Another Place</a>
+
+          <a href="#contactus">Contact Us</a>
+        </p>
+
+        <p class="footer-company-name">AllYouCanteen © 2023</p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+1.555.555.5555</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@company.com">support@company.com</a></p>
         </div>
       </div>
-    </section>
+
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the company</span>
+          Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce
+          euismod convallis velit, eu auctor lacus vehicula sit amet.
+        </p>
+
+        <div class="footer-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+        </div>
+      </div>
+    </footer>
 
     <!-- jquery -->
     <script
